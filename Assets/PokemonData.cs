@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class PokemonData : MonoBehaviour
 {
     // Initialize the variables
     [SerializeField] string PokemonName;
@@ -33,9 +33,9 @@ public class test : MonoBehaviour
         Steel,
         Fairy
     }
-    [SerializeField] string PokemonType;
-    [SerializeField] string[] PokemonWeaknesses;
-    [SerializeField] string[] PokemonResistances;
+    [SerializeField] Types PokemonType;
+    [SerializeField] Types[] PokemonWeaknesses;
+    [SerializeField] Types[] PokemonResistances;
 
     void DisplayName()
     {
@@ -67,7 +67,7 @@ public class test : MonoBehaviour
         // Display the weaknesses of the Pokemon
         string weaknesses = "Weaknesses : ";
         // For each Weakness in the PokemonWeaknesses array, add it to the string
-        foreach (string weakness in PokemonWeaknesses)
+        foreach (Types weakness in PokemonWeaknesses)
         {
             weaknesses += weakness + " ";
         }
@@ -78,7 +78,7 @@ public class test : MonoBehaviour
         // Display the resistances of the Pokemon
         string resistances = "Resistances : ";
         // For each Resistance in the PokemonResistances array, add it to the string
-        foreach (string resistance in PokemonResistances)
+        foreach (Types resistance in PokemonResistances)
         {
             resistances += resistance + " ";
         }
@@ -109,22 +109,22 @@ public class test : MonoBehaviour
             return;
         }
         // For each Weakness in the PokemonWeaknesses array, if the type of the attack is the same as the weakness, the damage is doubled
-        foreach (string weakness in PokemonWeaknesses)
+        foreach (Types weakness in PokemonWeaknesses)
         {
-            if (type == weakness)
+            if (type == weakness.ToString())
             {
                 damage *= 2;
-                Debug.Log("The attack is of type " + type + ", one of the weaknesses of " + PokemonName);
+                Debug.Log("The attack is of type " + type.ToString() + ", one of the weaknesses of " + PokemonName);
                 Debug.Log("The damage is doubled : " + damage + " instead of " + damage / 2);
             }
         }
         // For each Resistance in the PokemonResistances array, if the type of the attack is the same as the resistance, the damage is divided by 2
-        foreach (string resistance in PokemonResistances)
+        foreach (Types resistance in PokemonResistances)
         {
-            if (type == resistance)
+            if (type == resistance.ToString())
             {
                 damage /= 2;
-                Debug.Log("The attack is of type " + type + ", one of the resistances of " + PokemonName);
+                Debug.Log("The attack is of type " + type.ToString() + ", one of the resistances of " + PokemonName);
                 Debug.Log("The damage is divided by 2 : " + damage + " instead of " + damage * 2);
             }
         }
@@ -157,10 +157,10 @@ public class test : MonoBehaviour
         PokemonHP = 95;
         PokemonBaseAttack = 125;
         PokemonBaseDefense = 79;
-        PokemonType = Types.Water.ToString();
+        PokemonType = Types.Water;
         PokemonWeight = 235.4f;
-        PokemonWeaknesses = new string[] { Types.Rock.ToString(), Types.Electric.ToString() };
-        PokemonResistances = new string[] { Types.Fighting.ToString(), Types.Bug.ToString(), Types.Fire.ToString(), Types.Water.ToString(), Types.Steel.ToString()};
+        PokemonWeaknesses = new Types[] { Types.Rock, Types.Electric };
+        PokemonResistances = new Types[] { Types.Fighting, Types.Bug, Types.Fire, Types.Water, Types.Steel };
         
         // Display the variables
         DisplayName();
