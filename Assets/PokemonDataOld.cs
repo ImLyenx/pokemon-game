@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PokemonData : MonoBehaviour
+public class PokemonDataOld : MonoBehaviour
 {
     // Initialize the variables
     [SerializeField] string PokemonName;

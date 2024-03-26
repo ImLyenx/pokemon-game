@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88296666d30db44e82e450a56374caa, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: 
+  pokemonData:
+  - image: {fileID: 21300000, guid: 6678deda44a325a4ba5e40226f665456, type: 3}
+    name: "L\xE9viator"
+    size: 6.5
+    weight: 235
+    type: 0200000009000000
+    caption: "Lorsqu\u2019il appara\xEEt, il saccage tout. Sa fureur ne se calme
+      pas tant qu\u2019il n\u2019a pas tout d\xE9truit."
+  - image: {fileID: 21300000, guid: 0f20074185343fc498e454d00e66271f, type: 3}
+    name: Bulbizarre
+    size: 0.7
+    weight: 6.9
+    type: 0400000007000000
+    caption: "Au d\xE9but de sa vie, il se nourrit des nutriments accumul\xE9s dans
+      la graine sur son dos. Cela lui permet de grandir."
+  - image: {fileID: 21300000, guid: d58d93b6448f7484d9e22292f21ef7c1, type: 3}
+    name: Carapuce
+    size: 0.5
+    weight: 9
+    type: 02000000
+    caption: "Ce Pok\xE9mon crache une \xE9cume redoutable. Apr\xE8s sa naissance,
+      son dos gonfle et durcit pour former une carapace."
+  - image: {fileID: 21300000, guid: 1f2f234a08d8e2540a14d46d49a97690, type: 3}
+    name: Dracaufeu
+    size: 1.7
+    weight: 90.5
+    type: 0100000009000000
+    caption: "Quand Dracaufeu s\u2019\xE9nerve r\xE9ellement, la flamme au bout de
+      sa queue devient bleue."
+  - image: {fileID: 21300000, guid: 655d2b54629cf9d42a96f86e17d3077f, type: 3}
+    name: Ectoplasma
+    size: 1.5
+    weight: 40.5
+    type: 0d00000007000000
+    caption: "Il se cache dans l\u2019ombre de sa victime et attend patiemment le
+      bon moment pour lui voler sa vie."
+  - image: {fileID: 21300000, guid: beecaaf856b6a024095c2c3ec0f7336d, type: 3}
+    name: Grotadmorv
+    size: 1.2
+    weight: 30
+    type: 07000000
+    caption: "Ce Pok\xE9mon est recouvert d\u2019une \xE9paisse couche de boue crasseuse.
+      Il est si toxique que m\xEAme ses traces de pas sont empoisonn\xE9es."
+  - image: {fileID: 21300000, guid: 44a6f4cb12bab32478295d7064280c3c, type: 3}
+    name: Mew
+    size: 0.4
+    weight: 4
+    type: 0a000000
+    caption: "\xC0 l\u2019aide d\u2019un microscope, on peut distinguer le pelage
+      extr\xEAmement court, fin et d\xE9licat de ce Pok\xE9mon."
+  - image: {fileID: 21300000, guid: 9fd72562b0d88824889b4c855e339b3c, type: 3}
+    name: Onix
+    size: 8.8
+    weight: 210
+    type: 0c00000008000000
+    caption: "Il absorbe des \xE9l\xE9ments solides en creusant le sol, ce qui le
+      rend plus robuste."
+  - image: {fileID: 21300000, guid: 581297dce90cfa246bb497e0b7ef96d8, type: 3}
+    name: Pikachu
+    size: 0.4
+    weight: 6
+    type: 03000000
+    caption: "Quand il s\u2019\xE9nerve, il lib\xE8re instantan\xE9ment l\u2019\xE9nergie
+      emmagasin\xE9e dans les poches de ses joues."
+  - image: {fileID: 21300000, guid: dee5ff215806d6f4797718ae67aa4ff0, type: 3}
+    name: "\xC9voli"
+    size: 0.3
+    weight: 6.5
+    type: 00000000
+    caption: "Ses multiples \xE9volutions lui permettent de s\u2019adapter \xE0 tout
+      type de milieu naturel."
